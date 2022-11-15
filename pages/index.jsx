@@ -1,5 +1,7 @@
 import { NFTCard } from '/components/nftcard';
 import { useState } from 'react';
+import Footer from '../components/footer';
+
 
 const apiKey = process.env.NEXT_PUBLIC_ALCHEMY_API;
 const baseURL = `https://eth-mainnet.g.alchemy.com/nft/v2/${apiKey}`;
@@ -107,7 +109,7 @@ const Home = () => {
           })
         }
       </div>
-
+    <Footer />
     </div>
     )
 }
